@@ -45,7 +45,6 @@ Users can visually create, edit, connect, and manage workflow steps in a clean f
 ## UI & Design
 
 - Built with **pure CSS (no libraries)**
-- Zapier-inspired professional UI
 - Fixed top navigation bar
 - Clean typography and visual hierarchy
 - Horizontal layout for branch (True / False) paths
@@ -63,10 +62,4 @@ Users can visually create, edit, connect, and manage workflow steps in a clean f
 
 ---
 
-## Purpose
 
-This project demonstrates:
-- Strong React fundamentals
-- Complex state management
-- Thoughtful UI/UX design
-- Ability to build real-world tools from scratch
