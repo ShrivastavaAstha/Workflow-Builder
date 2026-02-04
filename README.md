@@ -1,16 +1,72 @@
-# React + Vite
+# Workflow-Builder 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page workflow builder UI built using **React functional components and Hooks**, inspired by tools like **Zapier**.  
+Users can visually create, edit, connect, and manage workflow steps in a clean flow-based layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Workflow Canvas**
+  - Starts with a root **Start** node
+  - Clear visual flow between parent and child nodes
+  - Connection lines show workflow direction
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Node Types**
+  - **Start** – entry point of the workflow
+  - **Action** – one outgoing connection
+  - **Branch (Condition)** – decision point with **True / False** paths
+  - **End** – terminal node with no children
 
-## Expanding the ESLint configuration
+- **Node Operations**
+  - Add nodes dynamically
+  - Edit node labels inline
+  - Delete nodes with proper parent reconnection
+  - Branch nodes support multiple outgoing connections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## State Management
+
+- Implemented using **`useReducer`**
+- Immutable state updates
+- **Undo / Redo** functionality using `past / present / future` pattern
+- Scalable JSON-based workflow data structure
+
+---
+
+## Save Workflow
+
+- A **Save** button logs the complete workflow JSON to the console
+- Simulates how workflow data could be persisted to a backend
+
+---
+
+## UI & Design
+
+- Built with **pure CSS (no libraries)**
+- Zapier-inspired professional UI
+- Fixed top navigation bar
+- Clean typography and visual hierarchy
+- Horizontal layout for branch (True / False) paths
+
+---
+
+## Tech Stack
+
+- React (Hooks only)
+- JavaScript
+- Plain CSS  
+- ❌ No UI libraries  
+- ❌ No workflow/diagram libraries  
+- ❌ No animation libraries  
+
+---
+
+## Purpose
+
+This project demonstrates:
+- Strong React fundamentals
+- Complex state management
+- Thoughtful UI/UX design
+- Ability to build real-world tools from scratch
