@@ -1,6 +1,6 @@
 # Workflow-Builder 
 
-A single-page workflow builder UI built using **React functional components and Hooks**, inspired by tools like **Zapier**.  
+A single-page workflow builder UI built using **React functional components and Hooks**.  
 Users can visually create, edit, connect, and manage workflow steps in a clean flow-based layout.
 
 ---
